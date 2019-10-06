@@ -4,7 +4,6 @@
 [![Travis (.org) branch](https://img.shields.io/travis/peakchen90/eslint-plugin-react-directives/master.svg)](https://travis-ci.org/peakchen90/eslint-plugin-react-directives)
 ![node](https://img.shields.io/node/v/eslint-plugin-react-directives.svg)
 ![npm peer dependency version](https://img.shields.io/npm/dependency-version/eslint-plugin-react-directives/peer/eslint.svg)
-[![npm](https://img.shields.io/npm/dt/eslint-plugin-react-directives.svg)](https://www.npmjs.com/package/eslint-plugin-react-directives)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/peakchen90/eslint-plugin-react-directives/blob/master/LICENSE)
 
 
