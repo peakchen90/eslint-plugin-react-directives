@@ -1,0 +1,44 @@
+{
+  "name": "eslint-plugin-react-directives",
+  "version": "0.0.1",
+  "description": "some rules for babel-plugin-react-directives.",
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "react",
+    "directive",
+    "react-directives"
+  ],
+  "author": "peakchen90 <1558267774@qq.com>",
+  "main": "index.js",
+  "files": [
+    "lib",
+    "index.js",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "mocha tests --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peakchen90/eslint-plugin-react-directives"
+  },
+  "homepage": "https://github.com/peakchen90/eslint-plugin-react-directives",
+  "bugs": "https://github.com/peakchen90/eslint-plugin-react-directives/issues",
+  "peerDependencies": {
+    "eslint": ">=5.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "mocha": "^6.2.1"
+  },
+  "engines": {
+    "node": ">=8.6.0"
+  },
+  "license": "MIT"
+}
