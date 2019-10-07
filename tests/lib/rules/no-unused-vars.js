@@ -11,6 +11,14 @@ new RuleTester({
     {
       code: `
         export default () => {
+          const [data, setData] = useState(0);
+          return <input x-model={data.foo}/>
+        }
+      `
+    },
+    {
+      code: `
+        export default () => {
           const [data, setData] = React.useState(0);
           return <input x-model={data}/>
         }
