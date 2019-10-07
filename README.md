@@ -1,13 +1,13 @@
 # eslint-plugin-react-directives
 
-![npm (tag)](https://img.shields.io/npm/v/eslint-plugin-react-directives/latest.svg)
 [![Travis (.org) branch](https://img.shields.io/travis/peakchen90/eslint-plugin-react-directives/master.svg)](https://travis-ci.org/peakchen90/eslint-plugin-react-directives)
 ![node](https://img.shields.io/node/v/eslint-plugin-react-directives.svg)
 ![npm peer dependency version](https://img.shields.io/npm/dependency-version/eslint-plugin-react-directives/peer/eslint.svg)
+![npm (tag)](https://img.shields.io/npm/v/eslint-plugin-react-directives.svg)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/peakchen90/eslint-plugin-react-directives/blob/master/LICENSE)
 
 
-some rules for babel-plugin-react-directives.
+some rules for [babel-plugin-react-directives](https://github.com/peakchen90/babel-plugin-react-directives).
 
 ## Installation
 
@@ -27,29 +27,58 @@ $ npm install eslint-plugin-react-directives --save-dev
 
 ## Usage
 
-Add `react-directives` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+There are two ways to configure it via `.eslintrc`:
 
 ```json
 {
   "plugins": [
     "react-directives"
-  ]
+  ],
+  "rules": {
+    "no-undef": "off",
+    "no-unused-vars": "off",
+    "react-directives/no-undef": "error",
+    "react-directives/no-unused-vars": "error"
+  }
 }
 ```
 
-
-Then configure the rules you want to use under the rules section.
+or use the recommended rules, which contains the above 2 steps:
 
 ```json
 {
+  "extends": [
+    "plugin:react-directives/recommended"
+  ],
   "rules": {
-    "react-directives/no-unused-vars": "error",
-    "react-directives/no-undef": "error"
+    "no-undef": "off",
+    "no-unused-vars": "off"
+  }
+}
+```
+
+**Note**: The rule `react-directives/no-undef` inherits from `no-undef`, the rule `react-directives/no-unused-vars` inherits from `no-unused-vars`, make sure the rules work, please turn them off.
+
+## Settings
+
+If you have configured some options in [`babel-plugin-react-directives`](https://github.com/peakchen90/babel-plugin-react-directives#options), add `settings` section to `.eslintrc` file.
+
+```json
+{
+  "settings": {
+    "react-directives": {
+      "prefix": "x",
+      "pragmaType": "React"
+    }
   }
 }
 ```
 
 ## List of supported rules
+
+* [react-directives/no-undef](./docs/rules/no-undef.md) Disallow Undeclared Variables.
+* [react-directives/no-unused-vars](./docs/rules/no-unused-vars.md) Disallow Unused Variables.
+
 
 ## Shareable configurations
 
@@ -68,3 +97,5 @@ To enable this configuration use the extends property in your .eslintrc config f
 
 The rules enabled in this configuration are:
 
+* [react-directives/no-undef](./docs/rules/no-undef.md)
+* [react-directives/no-unused-vars](./docs/rules/no-unused-vars.md)

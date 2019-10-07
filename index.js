@@ -5,14 +5,16 @@ module.exports = {
   },
   configs: {
     recommended: {
-      parser: 'babel-eslint',
       parserOptions: {
         ecmaVersion: 6
       },
       plugins: [
         'react-directives'
       ],
-      rules: {}
+      rules: {
+        'react-directives/no-undef': 'error',
+        'react-directives/no-unused-vars': 'error'
+      }
     }
   }
 };
