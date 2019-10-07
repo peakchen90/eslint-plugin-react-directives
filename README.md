@@ -57,7 +57,7 @@ or use the recommended rules:
 }
 ```
 
-**Note**: The rule `react-directives/no-undef` inherits from `no-undef`, the rule `react-directives/no-unused-vars` inherits from `no-unused-vars`, make sure the rules work, please turn them off.
+**Note**: The rule `react-directives/no-undef` inherits from [`no-undef`](https://eslint.org/docs/rules/no-undef), the rule `react-directives/no-unused-vars` inherits from [`no-unused-vars`](https://eslint.org/docs/rules/no-unused-vars), make sure the rules work, please turn them off.
 
 ## Settings
 
