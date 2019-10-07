@@ -43,7 +43,7 @@ There are two ways to configure it via `.eslintrc`:
 }
 ```
 
-or use the recommended rules, which contains the above 2 steps:
+or use the recommended rules:
 
 ```json
 {
