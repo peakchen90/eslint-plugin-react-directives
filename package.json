@@ -19,7 +19,8 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "mocha tests --recursive"
+    "test": "mocha tests --recursive",
+    "prepublish": "npm run test"
   },
   "repository": {
     "type": "git",
