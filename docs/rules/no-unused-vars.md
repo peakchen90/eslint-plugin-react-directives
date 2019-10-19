@@ -11,14 +11,14 @@ Ignore some unused variables when using the [`x-model`](https://github.com/peakc
 ```jsx harmony
 function Foo() {
   const [data, setData] = useState(0)
-  return <input x-model={data}/>
+  return <input x-model-hook={data}/>
 }
 ```
 
 ```jsx harmony
 function Foo() {
   const [data, setData] = React.useState(0)
-  return <input x-model={data}/>
+  return <input x-model-hook={data}/>
 }
 ```
 
@@ -34,7 +34,7 @@ function Foo() {
 ```jsx harmony
 function Foo() {
   const [data, setData] = Foo.useState(0)
-  return <input x-model={data}/>
+  return <input x-model-hook={data}/>
 }
 ```
 

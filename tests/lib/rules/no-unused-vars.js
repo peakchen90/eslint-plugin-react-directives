@@ -12,7 +12,7 @@ new RuleTester({
       code: `
         export default () => {
           const [data, setData] = useState(0);
-          return <input x-model={data.foo}/>
+          return <input x-model-hook={data.foo}/>
         }
       `
     },
@@ -20,7 +20,7 @@ new RuleTester({
       code: `
         export default () => {
           const [data, setData] = React.useState(0);
-          return <input x-model={data}/>
+          return <input x-model-hook={data}/>
         }
       `
     },
@@ -28,7 +28,7 @@ new RuleTester({
       code: `
         export default () => {
           const [data, setData] = React['useState'](0);
-          return <input x-model={data}/>
+          return <input x-model-hook={data}/>
         }
       `
     },
@@ -36,7 +36,7 @@ new RuleTester({
       code: `
         export default () => {
           const [data, setData] = useState(0);
-          return <input x-model={data}/>
+          return <input x-model-hook={data}/>
         }
       `
     },
@@ -47,7 +47,7 @@ new RuleTester({
             0: data,
             1: setState
           } = useState(0);
-          return <input x-model={data}/>
+          return <input x-model-hook={data}/>
         }
       `
     },
@@ -55,7 +55,7 @@ new RuleTester({
       code: `
         export default () => {
           const [data, setData] = useState(0);
-          return <input v-model={data}/>
+          return <input v-model-hook={data}/>
         }
       `,
       settings: {
@@ -68,7 +68,7 @@ new RuleTester({
       code: `
         export default () => {
           const [data, setData] = Preact.useState(0);
-          return <input x-model={data}/>
+          return <input x-model-hook={data}/>
         }
       `,
       settings: {
@@ -81,7 +81,7 @@ new RuleTester({
       code: `
         export default () => {
           const data = useState(0);
-          return <input x-model={data}/>
+          return <input x-model-hook={data}/>
         }
       `
     }
@@ -100,7 +100,18 @@ new RuleTester({
       code: `
         export default () => {
           const [data, setData] = Foo.useState(0);
-          return <input x-model={data}/>
+          return <input x-model-hook={data}/>
+        }
+      `,
+      errors: [
+        { message: /assigned a value but never used/ }
+      ]
+    },
+    {
+      code: `
+        export default () => {
+          const [data, setData] = useState(0);
+          return <input x-abc={data}/>
         }
       `,
       errors: [

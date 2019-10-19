@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-react-directives",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "some rules for babel-plugin-react-directives.",
   "keywords": [
     "eslint",
