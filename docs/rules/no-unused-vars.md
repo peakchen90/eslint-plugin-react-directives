@@ -6,7 +6,7 @@ This rule is almost the same as [`no-unused-vars`](https://eslint.org/docs/rules
 
 Ignore some unused variables when using the [`x-model`](https://github.com/peakchen90/babel-plugin-react-directives#x-model)
 
-## Examples of **incorrect** code for this rule:
+## Examples of **correct** code for this rule:
 
 ```jsx harmony
 function Foo() {
@@ -22,7 +22,7 @@ function Foo() {
 }
 ```
 
-## Examples of **correct** code for this rule:
+## Examples of **incorrect** code for this rule:
 
 ```jsx harmony
 function Foo() {
