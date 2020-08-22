@@ -6,7 +6,7 @@ This rule is almost the same as [`no-undef`](https://eslint.org/docs/rules/no-un
 
 Undefined variables are ignored under directive [`x-for`](https://github.com/peakchen90/babel-plugin-react-directives#x-for)
 
-## Examples of **incorrect** code for this rule:
+## Examples of **correct** code for this rule:
 
 ```jsx harmony
 function Foo() {
@@ -21,7 +21,7 @@ function Foo() {
 }
 ```
 
-## Examples of **correct** code for this rule:
+## Examples of **incorrect** code for this rule:
 
 ```jsx harmony
 function Foo() {
