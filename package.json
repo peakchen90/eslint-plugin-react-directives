@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-react-directives",
-  "version": "1.0.1",
+  "version": "2.0.0-beta.0",
   "description": "some rules for babel-plugin-react-directives.",
   "keywords": [
     "eslint",
@@ -32,11 +32,11 @@
     "eslint": ">=5.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.1.0",
     "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "mocha": "^6.2.1"
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^6.2.3"
   },
   "engines": {
     "node": ">=8.6.0"

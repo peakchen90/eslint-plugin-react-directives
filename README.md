@@ -36,9 +36,7 @@ There are two ways to configure it via `.eslintrc`:
   ],
   "rules": {
     "no-undef": "off",
-    "no-unused-vars": "off",
-    "react-directives/no-undef": "error",
-    "react-directives/no-unused-vars": "error"
+    "react-directives/no-undef": "error"
   }
 }
 ```
@@ -51,13 +49,10 @@ or use the recommended rules:
     "plugin:react-directives/recommended"
   ],
   "rules": {
-    "no-undef": "off",
-    "no-unused-vars": "off"
+    "no-undef": "off"
   }
 }
 ```
-
-**Note**: The rule `react-directives/no-undef` inherits from [`no-undef`](https://eslint.org/docs/rules/no-undef), the rule `react-directives/no-unused-vars` inherits from [`no-unused-vars`](https://eslint.org/docs/rules/no-unused-vars), make sure the rules work, please turn them off.
 
 ## Settings
 
@@ -67,8 +62,7 @@ If you have configured some options in [`babel-plugin-react-directives`](https:/
 {
   "settings": {
     "react-directives": {
-      "prefix": "x",
-      "pragmaType": "React"
+      "prefix": "x"
     }
   }
 }
@@ -77,7 +71,6 @@ If you have configured some options in [`babel-plugin-react-directives`](https:/
 ## List of supported rules
 
 * [react-directives/no-undef](./docs/rules/no-undef.md) Disallow Undeclared Variables.
-* [react-directives/no-unused-vars](./docs/rules/no-unused-vars.md) Disallow Unused Variables.
 
 
 ## Shareable configurations
@@ -98,4 +91,3 @@ To enable this configuration use the extends property in your .eslintrc config f
 The rules enabled in this configuration are:
 
 * [react-directives/no-undef](./docs/rules/no-undef.md)
-* [react-directives/no-unused-vars](./docs/rules/no-unused-vars.md)
