@@ -56,7 +56,7 @@ or use the recommended rules:
 
 ## Settings
 
-If you have configured some options in [`babel-plugin-react-directives`](https://github.com/peakchen90/babel-plugin-react-directives#or-use-options-babel-plugin-options), add `settings` section to `.eslintrc` file.
+If you have configured some options in [`babel-plugin-react-directives`](https://github.com/peakchen90/babel-plugin-react-directives#plugin-options), add `settings` section to `.eslintrc` file.
 
 ```json
 {
