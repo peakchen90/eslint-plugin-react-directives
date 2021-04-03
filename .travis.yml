@@ -1,13 +1,39 @@
 language: node_js
 
+os:
+  - linux
+
+dist: xenial
+
 node_js:
   - "8.6.0"
 
 install:
   - npm install
 
-script:
-  - npm run test
+stages:
+  - test
+  - name: releaseNpm
+    if: branch = master
+
+jobs:
+  include:
+    - stage: test
+      name: "Run test scripts"
+      script:
+        - npm run test
+
+    - stage: releaseNpm
+      name: "Release npm package"
+      node_js: "14"
+      script: echo "Release npm package..."
+      deploy:
+        provider: npm
+        email: 1558267774@qq.com
+        api_key: "$NPM_TOKEN"
+        skip_cleanup: true
+        on:
+          branch: master
 
 notifications:
   email: false
