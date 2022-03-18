@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-react-directives",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "some rules for babel-plugin-react-directives.",
   "keywords": [
     "eslint",
@@ -29,7 +29,7 @@
   "homepage": "https://github.com/peakchen90/eslint-plugin-react-directives",
   "bugs": "https://github.com/peakchen90/eslint-plugin-react-directives/issues",
   "peerDependencies": {
-    "eslint": "^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0"
+    "eslint": "^8.0.0"
   },
   "devDependencies": {
     "eslint": "^8.0.0",
@@ -38,7 +38,7 @@
     "mocha": "^6.2.3"
   },
   "engines": {
-    "node": ">=8.6.0"
+    "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
   },
   "license": "MIT"
 }

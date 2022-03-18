@@ -6,7 +6,7 @@ os:
 dist: xenial
 
 node_js:
-  - "8.6.0"
+  - "12.22.0"
 
 install:
   - npm install
