@@ -1,6 +1,6 @@
 # eslint-plugin-react-directives
 
-[![Build Status](https://travis-ci.com/peakchen90/eslint-plugin-react-directives.svg?branch=master)](https://travis-ci.com/peakchen90/eslint-plugin-react-directives)
+[![Build Status](https://app.travis-ci.com/peakchen90/eslint-plugin-react-directives.svg?branch=master)](https://app.travis-ci.com/peakchen90/eslint-plugin-react-directives)
 ![node](https://img.shields.io/node/v/eslint-plugin-react-directives.svg)
 ![npm peer dependency version](https://img.shields.io/npm/dependency-version/eslint-plugin-react-directives/peer/eslint.svg)
 [![npm](https://img.shields.io/npm/v/eslint-plugin-react-directives.svg)](https://www.npmjs.com/package/eslint-plugin-react-directives)
