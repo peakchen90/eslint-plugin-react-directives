@@ -29,13 +29,12 @@
   "homepage": "https://github.com/peakchen90/eslint-plugin-react-directives",
   "bugs": "https://github.com/peakchen90/eslint-plugin-react-directives/issues",
   "peerDependencies": {
-    "eslint": "^5.0.0 || ^6.0.0 || ^7.0.0"
+    "eslint": "^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint": "^8.0.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
     "mocha": "^6.2.3"
   },
   "engines": {
