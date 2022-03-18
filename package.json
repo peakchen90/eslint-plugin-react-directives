@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-react-directives",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "some rules for babel-plugin-react-directives.",
   "keywords": [
     "eslint",
@@ -29,7 +29,7 @@
   "homepage": "https://github.com/peakchen90/eslint-plugin-react-directives",
   "bugs": "https://github.com/peakchen90/eslint-plugin-react-directives/issues",
   "peerDependencies": {
-    "eslint": ">=5.0.0"
+    "eslint": "^5.0.0 || ^6.0.0 || ^7.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
